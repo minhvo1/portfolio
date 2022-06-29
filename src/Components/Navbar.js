@@ -39,7 +39,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="border-transparent border-b-2 hover:border-[#ebbe5d] hover:font-bold transition-color ease-in-out duration-150">
-          <Link to="projects" spy={true} smooth={true} duration={500}>
+          <Link to="projects" spy={true} offset={480} smooth={true} duration={500}>
             Projects
           </Link>
         </li>
@@ -62,17 +62,17 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="px-1 hover:bg-[#ebbe5d] transition-color ease-in-out duration-150">
-            <Link to="skills" spy={true} smooth={true} duration={500}>
+            <Link to="skills" spy={true} smooth={true} offset={100} duration={500}>
               Skills
             </Link>
           </li>
           <li className="px-1 hover:bg-[#ebbe5d] transition-color ease-in-out duration-150">
-            <Link to="projects" spy={true} smooth={true} duration={500}>
+            <Link to="projects" spy={true} smooth={true} offset={200} duration={500}>
               Projects
             </Link>
           </li>
           <li className="px-1 hover:bg-[#ebbe5d] transition-color ease-in-out duration-150">
-            <Link to="contact" spy={true} smooth={true} duration={500}>
+            <Link to="contact" spy={true} smooth={true} offset={50} duration={500}>
               Contact
             </Link>
           </li>

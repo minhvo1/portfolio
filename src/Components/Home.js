@@ -17,8 +17,15 @@ const Home = () => {
             {" "}
             I am a <b>full-stack web developer</b> based in Calgary, Canada.
           </p>
-          <div className="pt-6">
-            <Link to="projects" spy={true} smooth={true} duration={500}>
+          <div className="hidden pt-6 sm:block">
+            <Link to="projects" spy={true} smooth={true} offset={480} duration={500}>
+              <button className="text-[#353535] text-lg border-2 border-[#353535] rounded-md px-6 py-3 my-2 flex items-center  hover:bg-[#ebbe5d] hover:border-[#ebbe5d] hover:font-bold transition-color ease-in-out duration-150">
+                See My Projects
+              </button>
+            </Link>
+          </div>
+          <div className=" block pt-6 sm:hidden">
+            <Link to="projects" spy={true} smooth={true} offset={210} duration={500}>
               <button className="text-[#353535] text-lg border-2 border-[#353535] rounded-md px-6 py-3 my-2 flex items-center  hover:bg-[#ebbe5d] hover:border-[#ebbe5d] hover:font-bold transition-color ease-in-out duration-150">
                 See My Projects
               </button>

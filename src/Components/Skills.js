@@ -11,7 +11,7 @@ import tailwind from '../Assets/tailwind.png'
 
 const Skills = () => {
   return (
-    <div name="skills" className="skills-section pt-40 pb-36 bg-[#fdfcf9]">
+    <div name="skills" className="skills-section pt-32 pb-36 bg-[#fdfcf9]">
       <div className="flex flex-col justify-center items-center text-center">
         <p className="border-b-4 border-[#ebbe5d] text-5xl font-bold">Skills</p>
         <p className="text-[1.3rem] mt-8 px-3">

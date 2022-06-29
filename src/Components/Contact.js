@@ -4,14 +4,14 @@ import { MdEmail } from "react-icons/md";
 import { BsArrowRight } from "react-icons/bs";
 const Contact = () => {
   return (
-    <div name="contact" className="contact-section pt-24 pb-36 bg-[#fdfcf9]">
+    <div name="contact" className="contact-section pt-20 pb-36 bg-[#fdfcf9]">
       <div className="flex flex-col justify-center items-center">
         <p className="border-b-4 border-[#ebbe5d] text-5xl font-bold">
           Contact
         </p>
         <div className="contact-wrapper w-[80%] flex flex-row justify-between pt-24">
           <div className="send-message-header flex flex-col items-start w-[75%]">
-            <p className="text-3xl">Send me a message!</p>
+            <p className="text-[1.5rem]">Send me a message!</p>
             <form action="https://getform.io/f/be9794c6-05f2-41db-8e86-70262776d100" method="POST" className="flex flex-col w-[70%] pt-8">
               <div className="flex flex-row justify-between">
                 <input
@@ -39,7 +39,7 @@ const Contact = () => {
             </form>
           </div>
           <div className="links-header flex flex-col items-start w-[30%]">
-            <p className="text-3xl">Links</p>
+            <p className="text-[1.5rem]">Links</p>
             <div className="flex flex-row text-4xl justify-between w-[10.5rem] pt-10">
               <a
                 href="https://www.linkedin.com/in/minh-vo-/"
