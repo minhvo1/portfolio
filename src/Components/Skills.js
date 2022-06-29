@@ -1,4 +1,4 @@
-import React from 'react'
+import {React, useEffect} from 'react'
 import html from '../Assets/html.png'
 import css from '../Assets/css.png'
 import js from '../Assets/js.png'
@@ -7,17 +7,22 @@ import python from '../Assets/python.png'
 import postgre from '../Assets/postgre.png'
 import ruby from '../Assets/ruby.png'
 import tailwind from '../Assets/tailwind.png'
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 
 const Skills = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 })
+   }, []);
   return (
     <div name="skills" className="skills-section pt-32 pb-36 bg-[#fdfcf9]">
-      <div className="flex flex-col justify-center items-center text-center">
+      <div data-aos="fade-up" className="flex flex-col justify-center items-center text-center">
         <p className="border-b-4 border-[#ebbe5d] text-5xl font-bold">Skills</p>
         <p className="text-[1.3rem] mt-8 px-3">
           These are the technologies that I have worked with.
         </p>
-        <div className="skills-row-wrapper flex flex-col justify-center items-center">
+        <div data-aos="fade-up" className="skills-row-wrapper flex flex-col justify-center items-center">
           {/* First row */}
           <div className="skills-row flex flex-row mt-14 justify-between w-[60rem]">
             <div className="flex flex-col justify-center items-center px-4 py-5 hover:bg-[#ebbe5d] hover:font-bold hover:scale-110 hover:shadow-lg transition-color ease-in-out duration-200">

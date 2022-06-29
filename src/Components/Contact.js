@@ -1,11 +1,16 @@
-import React from 'react'
+import {React, useEffect} from 'react'
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { BsArrowRight } from "react-icons/bs";
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 const Contact = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 })
+   }, []);
   return (
     <div name="contact" className="contact-section pt-20 pb-36 bg-[#fdfcf9]">
-      <div className="flex flex-col justify-center items-center">
+      <div data-aos="fade-up" className="flex flex-col justify-center items-center">
         <p className="border-b-4 border-[#ebbe5d] text-5xl font-bold">
           Contact
         </p>
