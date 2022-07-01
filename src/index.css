@@ -229,7 +229,7 @@
   }
 
   .project {
-    height: 38rem;
+    height: 42rem;
     width: 100%;
 
   }
@@ -237,8 +237,8 @@
     text-align: center
   }
 
-  .project-img-website {
-    max-height: 300px !important;
-  }
+ 
+
+
 }
 

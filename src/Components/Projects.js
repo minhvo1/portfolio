@@ -107,7 +107,7 @@ const Projects = () => {
             </div>
             <div data-aos="fade-up" className="project-img">
               <img
-                className="project-img-website"
+                className="project-img-website project-img-website-fit"
                 src={portfolioWebsite}
                 alt="portfolio-website-img"
               />
