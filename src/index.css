@@ -237,7 +237,13 @@
     text-align: center
   }
 
- 
+  .project-img-website {
+    object-fit: cover;
+  }
+  
+  .project-img-website-fit {
+    object-fit: cover;
+  }
 
 
 }
