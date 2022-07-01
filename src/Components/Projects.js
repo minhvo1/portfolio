@@ -55,8 +55,8 @@ const Projects = () => {
                 add/remove maps, favorite maps and a user profile page.
                 <br></br>
                 <br></br>
-                <a href="https://github.com/minhvo1/mapper" target="_blank" rel="noopener noreferrer" className="text-2xl"><FaGithub/></a>
               </p>
+              <a href="https://github.com/minhvo1/mapper" target="_blank" rel="noopener noreferrer" className="text-2xl w-6"><FaGithub/></a>
             </div>
             <div data-aos="fade-up" className="project-img">
               <img className="" src={mapper} alt="mapper-img" />
@@ -68,7 +68,7 @@ const Projects = () => {
               data-aos="fade-up"
               className="project-description flex flex-col justify-start items-start w-[35%] pr-10"
             >
-              <p className="text-3xl font-bold md:text-4xl">
+              <p className="text-3xl font-bold md:text-4xl text-left">
                 Interview Scheduler
               </p>
               <p className="text-[0.8rem] mt-5 italic text-left md:text-[0.9rem]">
@@ -81,8 +81,8 @@ const Projects = () => {
                 Implemented unit and integration testing with Jest, Cypress and Storybook.
                 <br></br>
                 <br></br>
-                <a href="https://github.com/minhvo1/scheduler" target="_blank" rel="noopener noreferrer" className="text-2xl"><FaGithub/></a>                
               </p>
+              <a href="https://github.com/minhvo1/scheduler" target="_blank" rel="noopener noreferrer" className="text-2xl w-6"><FaGithub/></a>       
             </div>
             <div data-aos="fade-up" className="project-img">
               <img className="" src={scheduler} alt="scheduler-img" />
