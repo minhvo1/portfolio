@@ -17,7 +17,7 @@ const Home = () => {
       >
         <div className="intro pl-28 pt-10 flex flex-col content-center h-[75%] w-[45%]">
           <p className="greetings text-[#353535] text-7xl lg:text-8xl">
-            Hi, I'm <b className="text-[#000000] text-8xl lg:text-9xl">Minh.</b>
+            Hi, I'm <b className="text-[#000000] text-8xl lg:text-9xl">Minh<span className="text-[#c29533] font-extrabold">.</span></b>
           </p>
           <p className="description pt-8 text-2xl lg:text-2xl">
             {" "}

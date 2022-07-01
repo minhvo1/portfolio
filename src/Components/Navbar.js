@@ -26,7 +26,7 @@ const Navbar = () => {
   
   return (
     <div className="nav-bar w-full h-[6rem] flex justify-between items-center px-10 bg-[#f5f1e7]">
-      <h1 className="pl-10 text-4xl font-bold">Minh</h1>
+      <h1 className="pl-10 text-[2.5rem] font-bold">Minh<span className="text-[#c29533] font-extrabold">.</span></h1>
 
       <ul className="hidden md:flex md:text-[1.3rem]">
         <li className="border-transparent border-b-2 hover:border-[#ebbe5d] hover:font-bold transition-color ease-in-out duration-150">

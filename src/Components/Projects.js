@@ -1,14 +1,16 @@
-import {React, useEffect} from 'react'
-import mapper from '../Assets/mapper.PNG';
-import portfolioWebsite from '../Assets/website-portrait.png';
-import render from '../Assets/render.png'
-import Aos from 'aos';
-import 'aos/dist/aos.css'
+import { React, useEffect } from "react";
+import mapper from "../Assets/mapper.PNG";
+import portfolioWebsite from "../Assets/website-portrait.png";
+import render from "../Assets/render.png";
+import scheduler from "../Assets/scheduler.png";
+import { FaGithub } from "react-icons/fa"
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Projects = () => {
   useEffect(() => {
-    Aos.init({ duration: 1000 })
-   }, []);
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <div name="projects" className="project-section">
       <div className="wave-container wave-container-projects">
@@ -37,17 +39,23 @@ const Projects = () => {
               data-aos="fade-up"
               className="project-description flex flex-col justify-start items-start w-[35%] pr-10"
             >
-              <p className="text-3xl font-bold md:text-4xl text-left">mapper.</p>
+              <p className="text-3xl font-bold md:text-4xl text-left">
+                mapper.
+              </p>
               <p className="text-[0.8rem] mt-5 italic text-left md:text-[0.9rem]">
                 NodeJS / Express / PostgreSQL / Sass
               </p>
               <p className="text-[0.9rem] mt-5 text-left md:text-[1rem]">
-                mapper. is a full-stack map app that allows users to create their
-                own maps with a curated list of markers and view other users’
-                maps. 
+                A full-stack map app that allows users to create
+                their own maps with custom markers and view other
+                users’ maps.
                 <br></br>
                 <br></br>
-                Features include full Leaflet map, user login/registration, add/remove maps, favorite maps and a user profile page.
+                Features include full Leaflet map, user login/registration,
+                add/remove maps, favorite maps and a user profile page.
+                <br></br>
+                <br></br>
+                <a href="https://github.com/minhvo1/mapper" target="_blank" rel="noopener noreferrer" className="text-2xl"><FaGithub/></a>
               </p>
             </div>
             <div data-aos="fade-up" className="project-img">
@@ -58,10 +66,38 @@ const Projects = () => {
           <div className="project h-[40rem] w-[85%] bg-transparent flex flex-row justify-between items-center px-12 md:px-20 mt-16 hover:bg-[#ebbe5d] hover:shadow-md transition-color ease-in-out duration-300">
             <div
               data-aos="fade-up"
+              className="project-description flex flex-col justify-start items-start w-[35%] pr-10"
+            >
+              <p className="text-3xl font-bold md:text-4xl">
+                Interview Scheduler
+              </p>
+              <p className="text-[0.8rem] mt-5 italic text-left md:text-[0.9rem]">
+                React / Express / PostgreSQL
+              </p>
+              <p className="text-[0.9rem] mt-5 text-left md:text-[1rem]">
+                A React application that allows users to book and cancel appointments.
+                <br></br>
+                <br></br>
+                Implemented unit and integration testing with Jest, Cypress and Storybook.
+                <br></br>
+                <br></br>
+                <a href="https://github.com/minhvo1/scheduler" target="_blank" rel="noopener noreferrer" className="text-2xl"><FaGithub/></a>                
+              </p>
+            </div>
+            <div data-aos="fade-up" className="project-img">
+              <img className="" src={scheduler} alt="scheduler-img" />
+            </div>
+          </div>          
+          {/* Project 3 */}
+          <div className="project h-[40rem] w-[85%] bg-transparent flex flex-row justify-between items-center px-12 md:px-20 mt-16 hover:bg-[#ebbe5d] hover:shadow-md transition-color ease-in-out duration-300">
+            <div
+              data-aos="fade-up"
               data-aos-offset="100"
               className="project-description flex flex-col justify-start items-start w-[35%] pr-10"
             >
-              <p className="text-3xl font-bold md:text-4xl text-left">Portfolio Website</p>
+              <p className="text-3xl font-bold md:text-4xl text-left">
+                Portfolio Website
+              </p>
               <p className="text-[0.8rem] mt-5 italic text-left md:text-[0.9rem]">
                 React / Tailwind
               </p>
@@ -70,29 +106,37 @@ const Projects = () => {
               </p>
             </div>
             <div data-aos="fade-up" className="project-img">
-              <img className="project-img-website" src={portfolioWebsite} alt="portfolio-website-img" />
+              <img
+                className="project-img-website"
+                src={portfolioWebsite}
+                alt="portfolio-website-img"
+              />
             </div>
           </div>
 
-          {/* Project 3 */}
+          {/* Project 4 */}
           <div className="project h-[40rem] w-[85%] bg-transparent flex flex-row justify-between items-center px-12 md:px-20 mt-16 hover:bg-[#ebbe5d] hover:shadow-md transition-color ease-in-out duration-300">
             <div
               data-aos="fade-up"
               data-aos-offset="50"
               className="project-description flex flex-col justify-start items-start w-[35%] pr-10"
             >
-              <p className="text-3xl font-bold md:text-4xl text-left">mapper.</p>
+              <p className="text-3xl font-bold md:text-4xl text-left">
+                Voxel Designer
+              </p>
               <p className="text-[0.8rem] mt-5 italic text-left md:text-[0.9rem]">
-                NodeJS / Express / PostgreSQL / Sass
+                
               </p>
               <p className="text-[0.9rem] mt-5 text-left md:text-[1rem]">
-                mapper. is a map creator that allow users to create their own
-                map with a curated list of markers locations, as well as view
-                maps created by other users!
+                Designed and modelled 3D voxel-styled assets for various clients including The Sandbox Game and RTFKT Studios (Nike).
               </p>
             </div>
             <div data-aos="fade-up" className="project-img">
-              <img className="project-img-website" src={render} alt="render-img" />
+              <img
+                className="project-img-website"
+                src={render}
+                alt="render-img"
+              />
             </div>
           </div>
         </div>
@@ -108,6 +152,6 @@ const Projects = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Projects
+export default Projects;
