@@ -1,25 +1,41 @@
-import {React,useEffect} from 'react';
+import {React, useEffect, useState, Fragment } from 'react';
 import './App.css';
 import Navbar from './Components/Navbar'
 import Home from './Components/Home'
 import Skills from './Components/Skills'
 import Projects from './Components/Projects'
-import Contact from './Components/Contact'
-import Aos from 'aos';
-import 'aos/dist/aos.css'
+import Contact from './Components/Contact';
+import ClipLoader from "react-spinners/ClipLoader";
 
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
-    Aos.init({ duration: 1000 })
-   }, [])
+    
+    setTimeout(() => {
+      setLoading(false)
+    }, 1500)
+  }, [])
+
+
   return (
     <div className="App flex flex-col justify-center">
-      <Navbar/>
-      <Home />
-      <Skills />
-      <Projects />
-      <Contact />
+      {
+        loading ?
+          <div className="fixed top-[50%] left-[50%] mt-[-33px] ml-[-33px]">
+            <ClipLoader size={70} color={"#ebbe5d"} loading={loading}/>
+          </div>
+        :
+        <Fragment>
+          <Navbar/>
+          <Home />
+          <Skills />
+          <Projects />
+          <Contact />
+        </Fragment>
+      }
+      
     </div>
   );
 }
