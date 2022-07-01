@@ -242,7 +242,7 @@
   }
   
   .project-img-website-fit {
-    max-height: 350px;
+    max-height: 450px !important;
     object-fit: cover;
   }
 
