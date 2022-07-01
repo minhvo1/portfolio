@@ -56,7 +56,7 @@ const Navbar = () => {
         </div>
 
         {/*Mobile*/}
-        <ul className={!isMenuOpen? "hidden": "dropdown-menu-mobile absolute text-right top-14 right-0 rounded-md bg-transparent text-black text-[1.3rem] py-1 transition-opacity"}>
+        <ul className={!isMenuOpen? "hidden": "dropdown-menu-mobile absolute text-right top-14 right-0 rounded-md bg-transparent text-black text-[1.3rem] py-1 transition-opacity z-10"}>
           <li className="px-1 hover:bg-[#ebbe5d] transition-color ease-in-out duration-150">
             <Link to="home" spy={true} smooth={true} duration={1000}>
               Home

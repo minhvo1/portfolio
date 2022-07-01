@@ -1,5 +1,7 @@
 import {React, useEffect} from 'react'
 import mapper from '../Assets/mapper.PNG';
+import portfolioWebsite from '../Assets/website-portrait.png';
+import render from '../Assets/render.png'
 import Aos from 'aos';
 import 'aos/dist/aos.css'
 
@@ -18,7 +20,10 @@ const Projects = () => {
           ></path>
         </svg>
       </div>
-      <div data-aos="fade-up" className="flex flex-col justify-center items-center text-center pt-36 pb-20">
+      <div
+        data-aos="fade-up"
+        className="flex flex-col justify-center items-center text-center pt-36 pb-20"
+      >
         <p className="border-b-4 border-[#ebbe5d] text-5xl font-bold">
           Projects
         </p>
@@ -28,15 +33,21 @@ const Projects = () => {
         <div className="projects-wrapper flex flex-col justify-center items-center">
           {/* Project 1 */}
           <div className="project h-[40rem] w-[85%] bg-transparent flex flex-row justify-between items-center px-12 md:px-20 mt-16 hover:bg-[#ebbe5d] hover:shadow-md transition-color ease-in-out duration-300">
-            <div data-aos="fade-up" className="project-description flex flex-col justify-start items-start w-[35%] pr-10">
-              <p className="text-3xl font-bold md:text-4xl">mapper.</p>
+            <div
+              data-aos="fade-up"
+              className="project-description flex flex-col justify-start items-start w-[35%] pr-10"
+            >
+              <p className="text-3xl font-bold md:text-4xl text-left">mapper.</p>
               <p className="text-[0.8rem] mt-5 italic text-left md:text-[0.9rem]">
                 NodeJS / Express / PostgreSQL / Sass
               </p>
               <p className="text-[0.9rem] mt-5 text-left md:text-[1rem]">
-                mapper. is a map creator that allow users to create their own
-                map with a curated list of markers locations, as well as view
-                maps created by other users!
+                mapper. is a full-stack map app that allows users to create their
+                own maps with a curated list of markers and view other users’
+                maps. 
+                <br></br>
+                <br></br>
+                Features include full Leaflet map, user login/registration, add/remove maps, favorite maps and a user profile page.
               </p>
             </div>
             <div data-aos="fade-up" className="project-img">
@@ -45,26 +56,32 @@ const Projects = () => {
           </div>
           {/* Project 2 */}
           <div className="project h-[40rem] w-[85%] bg-transparent flex flex-row justify-between items-center px-12 md:px-20 mt-16 hover:bg-[#ebbe5d] hover:shadow-md transition-color ease-in-out duration-300">
-            <div data-aos="fade-up" className="project-description flex flex-col justify-start items-start w-[35%] pr-10">
-              <p className="text-3xl font-bold md:text-4xl">mapper.</p>
+            <div
+              data-aos="fade-up"
+              data-aos-offset="100"
+              className="project-description flex flex-col justify-start items-start w-[35%] pr-10"
+            >
+              <p className="text-3xl font-bold md:text-4xl text-left">Portfolio Website</p>
               <p className="text-[0.8rem] mt-5 italic text-left md:text-[0.9rem]">
-                NodeJS / Express / PostgreSQL / Sass
+                React / Tailwind
               </p>
               <p className="text-[0.9rem] mt-5 text-left md:text-[1rem]">
-                mapper. is a map creator that allow users to create their own
-                map with a curated list of markers locations, as well as view
-                maps created by other users!
+                A mobile responsive portfolio website built from scratch.
               </p>
             </div>
             <div data-aos="fade-up" className="project-img">
-              <img className="" src={mapper} alt="mapper-img" />
+              <img className="project-img-website" src={portfolioWebsite} alt="portfolio-website-img" />
             </div>
           </div>
 
           {/* Project 3 */}
           <div className="project h-[40rem] w-[85%] bg-transparent flex flex-row justify-between items-center px-12 md:px-20 mt-16 hover:bg-[#ebbe5d] hover:shadow-md transition-color ease-in-out duration-300">
-            <div data-aos="fade-up" className="project-description flex flex-col justify-start items-start w-[35%] pr-10">
-              <p className="text-3xl font-bold md:text-4xl">mapper.</p>
+            <div
+              data-aos="fade-up"
+              data-aos-offset="50"
+              className="project-description flex flex-col justify-start items-start w-[35%] pr-10"
+            >
+              <p className="text-3xl font-bold md:text-4xl text-left">mapper.</p>
               <p className="text-[0.8rem] mt-5 italic text-left md:text-[0.9rem]">
                 NodeJS / Express / PostgreSQL / Sass
               </p>
@@ -75,7 +92,7 @@ const Projects = () => {
               </p>
             </div>
             <div data-aos="fade-up" className="project-img">
-              <img className="" src={mapper} alt="mapper-img" />
+              <img className="project-img-website" src={render} alt="render-img" />
             </div>
           </div>
         </div>
