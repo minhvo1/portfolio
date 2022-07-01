@@ -240,10 +240,15 @@
   .project-img-website {
     object-fit: cover;
   }
+
+  .project-website {
+    height: 50rem;
+  }
   
   .project-img-website-fit {
-    max-height: 450px !important;
+    max-height: 490px !important;
     object-fit: cover;
+    
   }
 
 

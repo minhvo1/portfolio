@@ -89,7 +89,7 @@ const Projects = () => {
             </div>
           </div>          
           {/* Project 3 */}
-          <div className="project h-[40rem] w-[85%] bg-transparent flex flex-row justify-between items-center px-12 md:px-20 mt-16 hover:bg-[#ebbe5d] hover:shadow-md transition-color ease-in-out duration-300">
+          <div className="project project-website h-[40rem] w-[85%] bg-transparent flex flex-row justify-between items-center px-12 md:px-20 mt-16 hover:bg-[#ebbe5d] hover:shadow-md transition-color ease-in-out duration-300">
             <div
               data-aos="fade-up"
               data-aos-offset="100"
