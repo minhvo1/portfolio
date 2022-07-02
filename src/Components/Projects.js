@@ -103,7 +103,10 @@ const Projects = () => {
               </p>
               <p className="text-[0.9rem] mt-5 text-left md:text-[1rem]">
                 A mobile responsive portfolio website built from scratch.
+                <br></br>
+                <br></br>
               </p>
+              <a href="https://github.com/minhvo1/portfolio-website/" target="_blank" rel="noopener noreferrer" className="text-2xl w-6"><FaGithub/></a>
             </div>
             <div data-aos="fade-up" className="project-img">
               <img
