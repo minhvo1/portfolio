@@ -3,7 +3,8 @@ import mapper from "../Assets/mapper.PNG";
 import portfolioWebsite from "../Assets/website-portrait.png";
 import render from "../Assets/render.png";
 import scheduler from "../Assets/scheduler.png";
-import { FaGithub } from "react-icons/fa"
+import folio from "../Assets/folio.PNG";
+import { FaGithub } from "react-icons/fa";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -40,15 +41,48 @@ const Projects = () => {
               className="project-description flex flex-col justify-start items-start w-[35%] pr-10"
             >
               <p className="text-3xl font-bold md:text-4xl text-left">
+                Folio
+              </p>
+              <p className="text-[0.8rem] mt-5 italic text-left md:text-[0.9rem]">
+                NodeJS / React / Express / PostgreSQL
+              </p>
+              <p className="text-[0.9rem] mt-5 text-left md:text-[1rem]">
+                A stock trading app that allows users to buy, sell assets and
+                track their performances using a real time API.
+                <br></br>
+                <br></br>
+                Has a competition feature that allows users to compete in trading against each other and win rewards.
+                <br></br>
+                <br></br>
+              </p>
+              <a
+                href="https://github.com/minhvo1/final-project"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-2xl w-6"
+              >
+                <FaGithub />
+              </a>
+            </div>
+            <div data-aos="fade-up" className="project-img">
+              <img className="" src={folio} alt="folio-img" />
+            </div>
+          </div>
+          {/* Project 2 */}
+          <div className="project h-[40rem] w-[85%] bg-transparent flex flex-row justify-between items-center px-12 md:px-20 mt-16 hover:bg-[#ebbe5d] hover:shadow-md transition-color ease-in-out duration-300">
+            <div
+              data-aos="fade-up"
+              className="project-description flex flex-col justify-start items-start w-[35%] pr-10"
+            >
+              <p className="text-3xl font-bold md:text-4xl text-left">
                 mapper.
               </p>
               <p className="text-[0.8rem] mt-5 italic text-left md:text-[0.9rem]">
                 NodeJS / Express / PostgreSQL / Sass
               </p>
               <p className="text-[0.9rem] mt-5 text-left md:text-[1rem]">
-                A full-stack map app that allows users to create
-                their own maps with custom markers and view other
-                users’ maps.
+                A full-stack map app that allows users to create their own maps
+                with custom markers and view other users’ maps.
                 <br></br>
                 <br></br>
                 Features include full Leaflet map, user login/registration,
@@ -56,7 +90,14 @@ const Projects = () => {
                 <br></br>
                 <br></br>
               </p>
-              <a href="https://github.com/minhvo1/mapper" target="_blank" rel="noopener noreferrer" className="text-2xl w-6"><FaGithub/></a>
+              <a
+                href="https://github.com/minhvo1/mapper"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-2xl w-6"
+              >
+                <FaGithub />
+              </a>
             </div>
             <div data-aos="fade-up" className="project-img">
               <img className="" src={mapper} alt="mapper-img" />
@@ -75,19 +116,28 @@ const Projects = () => {
                 React / Express / PostgreSQL
               </p>
               <p className="text-[0.9rem] mt-5 text-left md:text-[1rem]">
-                A React application that allows users to book and cancel appointments.
+                A React application that allows users to book and cancel
+                appointments.
                 <br></br>
                 <br></br>
-                Implemented unit and integration testing with Jest, Cypress and Storybook.
+                Implemented unit and integration testing with Jest, Cypress and
+                Storybook.
                 <br></br>
                 <br></br>
               </p>
-              <a href="https://github.com/minhvo1/scheduler" target="_blank" rel="noopener noreferrer" className="text-2xl w-6"><FaGithub/></a>       
+              <a
+                href="https://github.com/minhvo1/scheduler"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-2xl w-6"
+              >
+                <FaGithub />
+              </a>
             </div>
             <div data-aos="fade-up" className="project-img">
               <img className="" src={scheduler} alt="scheduler-img" />
             </div>
-          </div>          
+          </div>
           {/* Project 3 */}
           <div className="project project-website h-[40rem] w-[85%] bg-transparent flex flex-row justify-between items-center px-12 md:px-20 mt-16 hover:bg-[#ebbe5d] hover:shadow-md transition-color ease-in-out duration-300">
             <div
@@ -106,7 +156,14 @@ const Projects = () => {
                 <br></br>
                 <br></br>
               </p>
-              <a href="https://github.com/minhvo1/portfolio-website/" target="_blank" rel="noopener noreferrer" className="text-2xl w-6"><FaGithub/></a>
+              <a
+                href="https://github.com/minhvo1/portfolio-website/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-2xl w-6"
+              >
+                <FaGithub />
+              </a>
             </div>
             <div data-aos="fade-up" className="project-img">
               <img
@@ -127,11 +184,10 @@ const Projects = () => {
               <p className="text-3xl font-bold md:text-4xl text-left">
                 Voxel Designer
               </p>
-              <p className="text-[0.8rem] mt-5 italic text-left md:text-[0.9rem]">
-                
-              </p>
+              <p className="text-[0.8rem] mt-5 italic text-left md:text-[0.9rem]"></p>
               <p className="text-[0.9rem] mt-5 text-left md:text-[1rem]">
-                Designed and modelled 3D voxel-styled assets for various clients including The Sandbox Game and RTFKT Studios (Nike).
+                Designed and modelled 3D voxel-styled assets for various clients
+                including The Sandbox Game and RTFKT Studios (Nike).
               </p>
             </div>
             <div data-aos="fade-up" className="project-img">
