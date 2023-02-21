@@ -5,8 +5,8 @@ import js from '../Assets/js.png'
 import react from '../Assets/react.png'
 import python from '../Assets/python.png'
 import postgre from '../Assets/postgre.png'
-import ruby from '../Assets/ruby.png'
 import nodejs from '../Assets/nodejs.png'
+import vue from '../Assets/vue.png'
 import Aos from 'aos';
 import 'aos/dist/aos.css'
 
@@ -46,16 +46,16 @@ const Skills = () => {
           {/* Second row */}
           <div className="skills-row flex flex-row mt-14 justify-between w-[60rem]">
             <div className="flex flex-col justify-center items-center px-4 py-5 hover:bg-[#ebbe5d] hover:font-bold hover:scale-110 hover:shadow-lg transition-color ease-in-out duration-200">
+              <img className="w-32 mx-auto" src={vue} alt="html-icon" />
+              <p className="pt-3 text-sm">Vue</p>
+            </div>
+            <div className="flex flex-col justify-center items-center px-4 py-5 hover:bg-[#ebbe5d] hover:font-bold hover:scale-110 hover:shadow-lg transition-color ease-in-out duration-200">
               <img className="w-32 mx-auto" src={nodejs} alt="html-icon" />
               <p className="pt-3 text-sm">NodeJS</p>
             </div>
             <div className="flex flex-col justify-center items-center px-4 py-5 hover:bg-[#ebbe5d] hover:font-bold hover:scale-110 hover:shadow-lg transition-color ease-in-out duration-200">
               <img className="w-32 mx-auto" src={python} alt="html-icon" />
               <p className="pt-3 text-sm">Python</p>
-            </div>
-            <div className="flex flex-col justify-center items-center px-4 py-5 hover:bg-[#ebbe5d] hover:font-bold hover:scale-110 hover:shadow-lg transition-color ease-in-out duration-200">
-              <img className="w-32 mx-auto" src={ruby} alt="html-icon" />
-              <p className="pt-3 text-sm">Ruby</p>
             </div>
             <div className="flex flex-col justify-center items-center px-4 py-5 hover:bg-[#ebbe5d] hover:font-bold hover:scale-110 hover:shadow-lg transition-color ease-in-out duration-200">
               <img className="w-32 mx-auto" src={postgre} alt="html-icon" />

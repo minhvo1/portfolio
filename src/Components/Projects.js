@@ -4,7 +4,9 @@ import portfolioWebsite from "../Assets/website-portrait.png";
 import render from "../Assets/render.png";
 import scheduler from "../Assets/scheduler.png";
 import folio from "../Assets/folio.PNG";
+import gen from "../Assets/gen.PNG";
 import { FaGithub } from "react-icons/fa";
+import { TfiWorld } from "react-icons/tfi";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -40,9 +42,49 @@ const Projects = () => {
               data-aos="fade-up"
               className="project-description flex flex-col justify-start items-start w-[35%] pr-10"
             >
-              <p className="text-3xl font-bold md:text-4xl text-left">
-                Folio
+              <p className="text-3xl font-bold md:text-4xl text-left">Generative Archive</p>
+              <p className="text-[0.8rem] mt-5 italic text-left md:text-[0.9rem]">
+                Vue / Tailwind
               </p>
+              <p className="text-[0.9rem] mt-5 text-left md:text-[1rem]">
+                A web app containing a collection of generative art algorithms, drawn using the p5.js library.
+                <br></br>
+                <br></br>
+                Users have the options to regenerate a new output and/or save the desired output from the algorithm.
+                <br></br>
+                <br></br>
+              </p>
+              <div className="project-links flex flex-row">
+                <a
+                  href="https://generative-archive.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-2xl w-6 mr-3"
+                >
+                  <TfiWorld />
+                </a>
+                
+                <a
+                  href="https://github.com/minhvo1/archive"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-2xl w-6"
+                >
+                  <FaGithub />
+                </a>
+              </div>
+            </div>
+            <div data-aos="fade-up" className="project-img">
+              <img className="" src={gen} alt="gen-img" />
+            </div>
+          </div>
+          {/* Project 1 */}
+          <div className="project h-[40rem] w-[85%] bg-transparent flex flex-row justify-between items-center px-12 md:px-20 mt-16 hover:bg-[#ebbe5d] hover:shadow-md transition-color ease-in-out duration-300">
+            <div
+              data-aos="fade-up"
+              className="project-description flex flex-col justify-start items-start w-[35%] pr-10"
+            >
+              <p className="text-3xl font-bold md:text-4xl text-left">Folio</p>
               <p className="text-[0.8rem] mt-5 italic text-left md:text-[0.9rem]">
                 NodeJS / React / Express / PostgreSQL
               </p>
@@ -51,7 +93,8 @@ const Projects = () => {
                 track their performances using a real time API.
                 <br></br>
                 <br></br>
-                Has a competition feature that allows users to compete in trading against each other and win rewards.
+                Has a competition feature that allows users to compete in
+                trading against each other and win rewards.
                 <br></br>
                 <br></br>
               </p>
