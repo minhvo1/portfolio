@@ -21,7 +21,7 @@ const Home = () => {
           </p>
           <p className="description pt-8 text-2xl lg:text-2xl">
             {" "}
-            I am a <b>Full-Stack Software Developer</b> based in Calgary, Canada.
+            I am a <b>Frontend Software Developer</b> based in Calgary, Canada.
           </p>
           <div className="hidden pt-6 sm:block">
             <Link to="projects" spy={true} smooth={true} offset={480} duration={1000}>
